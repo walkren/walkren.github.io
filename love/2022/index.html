@@ -40,13 +40,32 @@
             text-align: center;
             width: 100%;
             position: absolute;
-            top: 50%;
-            font-family: 'Josefin Slab';
-            font-size: 50px;
+            top: 43%;
+            /*font-family: 'Josefin Slab';*/
+            /*font-family: 'Indie Flower', cursive;*/
+            font-family: cursive;
+            font-style: italic;
+            font-size: 38px;
             color: #e41e3f;
             text-transform: uppercase;
             margin-top: -200px;
+            line-height: 60px;
         }
+
+        /*.header h2 {*/
+        /*    z-index: 999999;*/
+        /*    text-align: center;*/
+        /*    width: 100%;*/
+        /*    position: absolute;*/
+        /*    top: 50%;*/
+        /*    font-family: 'Josefin Slab';*/
+        /*    font-family: 'Indie Flower', cursive;*/
+        /*    font-style: italic;*/
+        /*    font-size: 38px;*/
+        /*    color: #e41e3f;*/
+        /*    text-transform: uppercase;*/
+        /*    margin-top: -200px;*/
+        /*}*/
 
         .article {
             display: none;
@@ -190,6 +209,7 @@
             z-index: 12;
             display: none;
             color: #db7093;
+            font-family: 'Indie Flower', cursive;
         }
 
         #loading {
@@ -270,6 +290,19 @@
             height: 100%
         }
 
+        #loveText {
+            animation: loveTextAn 2s;
+        }
+        
+        @keyframes loveTextAn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
         #elapseClock {
             text-align: center;
             font-size: 14px;
@@ -301,7 +334,8 @@
 <body>
 
 <header class="header">
-    <h1>我们的爱</h1>
+    <h1>陪伴是<br/>最长情的告白</h1>
+    <h2>最长情的告白</h2>
     <div class="start" id="start"><p></p><span></span></div>
     <div class="mask"></div>
 </header>
@@ -321,7 +355,7 @@
 </div>
 
 <div id="loveText">
-    <div id="loveHeader">我们在一起</div>
+    <div id="loveHeader">这是我们在一起的时光</div>
     <div id="elapseClock"></div>
 <!--    <div id="loveFooter">永远爱你</div>-->
     <div class="signature"></div>
